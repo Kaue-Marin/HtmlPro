@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: #131416;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subcontainer {
+  width: 55%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.header-items {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-logo {
+  width: 55px;
+  height: auto;
+}
+
+.title-logo {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+
+.main-container {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  margin-bottom: 220px;
+}
+
+.ebook {
+  width: 200px;
+  height: auto;
+}
+
+.text-section-2 {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+  line-height: 47px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.button-section-2 {
+  padding: 15px 60px;
+  background: #0772eb;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18.5px;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+}
+
+.button-section-2:hover {
+  background: #155cad;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+.cards-title {
+  color: #fff;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  background: #1e212c;
+  min-width: 185px;
+  height: 170px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: "inter", sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  background: #252831;
+}
+
+.card img {
+  width: 65px;
+  height: auto;
+}
+
+.anuncio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "inter", sans-serif;
+  margin-bottom: 48px;
+}
+
+.chamada-anuncio {
+  padding: 15px 30px;
+  background: #1e212c;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 12.6px;
+  border-radius: 50px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.chamada-anuncio-2 {
+  color: #0772eb;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.chamada-anuncio-3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.footer-link {
+  padding: 18px 60px;
+  background: #0772eb;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 50px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: -90px;
+  font-family: "inter", sans-serif;
+}
+
+.footer-container {
+  background: #1e212c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  padding: 70px;
+}
+
+.footer-link {
+  padding: 18px 60px;
+  background: #0772eb;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 50px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: -90px;
+  font-family: "inter", sans-serif;
+}
+
+.footer-text {
+  margin-top: 40px;
+  font-family: "inter", sans-serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .subcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-section-2 {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .text-section-2 {
+    font-size: 23px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .button-section-2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 40px;
+  }
+
+  .cards-title {
+    text-align: center;
+  }
+
+  .cards {
+    gap: 30px;
+  }
+
+  .chamada-anuncio-2 {
+    font-size: 27px;
+  }
+
+  .footer-link {
+    width: 240px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-section-2 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .button-section-2 {
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 40px;
+  }
+
+  .cards-title {
+    text-align: center;
+  }
+
+  .cards {
+    gap: 30px;
+  }
+
+  .chamada-anuncio-2 {
+    font-size: 27px;
+  }
+
+  .footer-link {
+    width: 240px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
